@@ -6,10 +6,10 @@ import debug from 'debug';
 const ll = debug('notionbot::notionConnector');
 
 const notion = new Client({
-    auth: env!.NOTION_TOKEN,
+    auth: env!.secret_B7Fc0S6wIoZiqNeHKmB6DT5PhDudJHKqOf5A1KYXZFs,
 });
 
-const taskDB = env!.NOTION_TASK_DB;
+const taskDB = env!.09767b0861134519be6f2846922e954a;
 
 export default {
     createTask: function (title: string, tgAuthor: string): Promise<CreatePageResponse> {
